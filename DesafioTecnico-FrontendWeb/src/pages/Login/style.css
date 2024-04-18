@@ -21,15 +21,21 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            min-height: 101vh;
             min-width: 50vh;
         }
 
+        /*todas as section*/
         .imagem-section {
             gap: 8px;
 
             flex-grow: 1;
             background-color: #eeeeeeee;
+
+            h2 {
+                color: black;
+                margin-bottom: -75px;
+            }
         }
 
         .login-section {
@@ -39,17 +45,50 @@ body {
             gap: 24px;
         }
 
+        /*todos os h2 da section login*/
         .login {
             font-size: 30px;
             font-weight: bold;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
         }
 
         .cadastro {
             font-size: 30px;
             font-weight: bold;
             margin-bottom: 0px;
-            margin-top: -10px;
+            margin-top: -20px;
+        }
+
+        /*todos os botões*/
+        .todos-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+
+            .dividir {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                width: 100%;
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                color: #C2C2C2;
+                font-weight: 400;
+                text-transform: uppercase;
+
+                .divisor {
+                    flex-grow: 1;
+                    height: 1px;
+                    background-color: #C2C2C2;
+                }
+
+            }
+
         }
 
         button {
@@ -69,48 +108,65 @@ body {
             box-shadow: 0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
         }
 
-        .dividir{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            width: 100%;
-            margin-bottom: 10px;
-            
-            font-size: 14px;
-            color: #C2C2C2;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        .divisor{ 
-            flex-grow: 1;
-            height: 1px;
-            background-color: #C2C2C2;
-        }
-
         .Cadastrar-button {
             color: white;
             background-color: #8F6EFF;
         }
 
-        .todos-button {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            gap: 20px;
-        }
-
-        .logo{
-            margin-top: 30px;
+        /*imagens logo e a grande*/
+        .logo {
+            margin-top: 0px;
         }
 
         .imagemGrande {
-            height: 555px;
-            width: 555px;
-            margin-top: 25px;
+            height: 680px;
+            width: 680px;
+            margin-bottom: -40px;
         }
 
+        /*caixas de texto usuários*/
+        .input-section {
+            background-color: #C2C2C2;
+            padding: 12px 24px;
+            width: 100%;
+            margin: 5px;
+            position: relative;
+            border-radius: 8px;
+            display: flex;
+        }
+
+        .icon {
+            color: white;
+            background-color: #452B94;
+            border-radius: 8px;
+            padding: 15px 16px;
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+        }
+
+        .input-section input {
+            width: 90%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .LembrarSenha {
+            display: flex;
+            position: relative;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+
+        .LembrarSenha label input {
+            accent-color: #ffff;
+            margin: 4px;
+        }
     }
 }
