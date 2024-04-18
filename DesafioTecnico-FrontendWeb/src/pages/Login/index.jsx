@@ -4,10 +4,10 @@ import './style.css'
 
 const Login = () => {
     return (
-        <div className="main">
+        <main>
             <section className="login-section">
-                <img src="/src/assets/logo.svg" alt="logo" />
-                <h2>Faça seu Login</h2>
+                <img src="/src/assets/logoPrinc.svg" className="logo" />
+                <h2 className="login">Faça seu Login</h2>
                 <div className="input-section">
                     <label htmlFor="Login">Login:</label>
                     <input type="text" id="Login" />
@@ -16,19 +16,27 @@ const Login = () => {
                     <label htmlFor="Senha">Senha:</label>
                     <input type="pasword" id="Senha" />
                 </div>
-                <button className="Login-button">Entrar</button>
+                <div className="todos-button">
+                    <button className="Login-button">Entrar</button>
+                    <div className="dividir">
+                        <div className="divisor"></div>
+                        <span>ou</span>
+                        <div className="divisor"></div>
+                    </div>
 
-                <span>ou</span>
+                    <h2 className="cadastro">Cadastre-se agora</h2>
 
-                <h2>Cadastre-se agora</h2>
-                <button className="Cadastrar-button">Cadastrar</button>
+                    <button className="Cadastrar-button">Cadastrar</button>
+                </div>
+
             </section>
             <section className="imagem-section">
                 <h2>Eleve suas habilidades para desbloquear o próximo nível de sucesso!</h2>
-                <img src="/src/assets/imagegrande.svg" alt="imagem grande" />
+                <img src="/src/assets/3783951.webp" className="imagemGrande" />
+
             </section>
 
-        </div>
+        </main>
 
     );
 }
