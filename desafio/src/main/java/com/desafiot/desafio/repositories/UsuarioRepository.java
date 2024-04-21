@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.desafiot.desafio.entities.Usuario;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Integer>{
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
 }

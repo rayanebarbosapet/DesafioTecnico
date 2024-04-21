@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.desafiot.desafio.entities.Skill;
 
 @Repository
-public interface SkillRepository extends JpaRepository<Skill, Integer> {
+public interface SkillRepository extends JpaRepository<Skill, Long> {
 
 }
