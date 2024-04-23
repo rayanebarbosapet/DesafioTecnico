@@ -1,9 +1,10 @@
 import React from "react";
-import { BiUser } from "react-icons/bi";
-import { IoLockClosedOutline } from "react-icons/io5";
+
 
 import './style.css'
 import { Link } from "react-router-dom";
+import { FiUser } from "react-icons/fi"
+import { IoLockClosedOutline } from "react-icons/io5";
 
 
 const Login = () => {
@@ -17,7 +18,7 @@ const Login = () => {
 
                 <div className="input-section">
                     <input type="text" placeholder='Usuário' required />
-                    <BiUser className="icon" />
+                    <FiUser className="icon"/>
                 </div>
 
                 <div className="input-section">

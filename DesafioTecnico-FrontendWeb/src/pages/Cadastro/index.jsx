@@ -8,6 +8,7 @@ import "./style.css"
 const Cadastro = () => {
     return (
         <main>
+
             <section className='cadastro-section'>
                 <img src="/src/assets/logoPrinc.svg" className='logo' />
                 <h2 className='cadastro'>Faça seu cadastro</h2>
